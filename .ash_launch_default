@@ -1,0 +1,5 @@
+print "This is Atomic Structure Handler $version$"
+print " "
+print "- view the available commands by typing 'list command'"
+print "- view the manual by typing 'man' followed by the name of a command"
+print "- edit launch options in the file .ash_launch"
