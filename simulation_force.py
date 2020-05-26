@@ -4,7 +4,7 @@ import numpy as np
 import os
 
 # global constants
-lattice_constant_Au = 4.078
+lattice_constant_Au = 4.0782
 room_temperature = 270
 moving_force = 0.04
 
@@ -27,8 +27,8 @@ for force in forces:
     simu = ft.FrictionSimulation()
 
     # create two slabs of gold
-    simu.create_slab(element='Au',xy_cells=get_xy_cells(4.046),z_cells=3,bottom_z=12.0)
-    simu.create_slab(element='Au',xy_cells=get_xy_cells(4.046),z_cells=3,top_z=0.0)
+    simu.create_slab(element='Au',xy_cells=xy_cells_Au,z_cells=3,bottom_z=12.0)
+    simu.create_slab(element='Au',xy_cells=xy_cells_Au,z_cells=3,top_z=0.0)
 
     # check the system
     simu.list_atoms()
